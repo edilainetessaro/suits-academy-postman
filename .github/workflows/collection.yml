@@ -46,9 +46,9 @@ jobs:
               name: report
               path: ./result/Report.html
 
-      - name: Deploy
+      - name: Step 5 Deploy do Report.html
         if: ${{ always() }}
         uses: peaceiris/actions-gh-pages@v3
         with:
-              github_token: ${{ secrets.GITHUB_TOKEN }}
-              publish_dir: ./public
+              deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+              publish_dir: ./docs
