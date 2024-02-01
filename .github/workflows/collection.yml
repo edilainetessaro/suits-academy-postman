@@ -36,7 +36,7 @@ jobs:
         
         # Runs a set of commands using the runners shell
       - name: Step 3 Execute collection
-        run: newman run ./AcademyV1.postman_collection.json -g ./env-global.json -e ./env-local.json --delay-request 1 --reporters cli, -r htmlextra --reporter-htmlextra-export ./result/Report.html
+        run: newman run ./AcademyV1.postman_collection.json -g ./env-global.json -e ./env-local.json --delay-request 1 --reporters cli, -r htmlextra --reporter-htmlextra-export ./docs/index.html
      
         # Runs a set of commands using the runners shell
       - name: Step 4 Archive production artifacts
@@ -44,7 +44,7 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
               name: report
-              path: ./result/Report.html
+              path: ./docs/index.html
 
       - name: Step 5 Deploy do Report.html
         if: ${{ always() }}
