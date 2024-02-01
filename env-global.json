@@ -1,0 +1,33 @@
+{
+	"id": "832f70d0-c66a-4626-8232-7dc226e4ab34",
+	"values": [
+		{
+			"key": "MailAdmin",
+			"value": "sysadmin@qacoders.com",
+			"type": "secret",
+			"enabled": true
+		},
+		{
+			"key": "PasswordAdmin",
+			"value": "1234@Test",
+			"type": "secret",
+			"enabled": true
+		},
+		{
+			"key": "TokenAdmin",
+			"value": "",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "MsgChangePassword",
+			"value": "Senha atualizada com sucesso!",
+			"type": "default",
+			"enabled": true
+		}
+	],
+	"name": "Globals",
+	"_postman_variable_scope": "globals",
+	"_postman_exported_at": "2024-01-30T18:48:42.965Z",
+	"_postman_exported_using": "Postman/10.22.9"
+}
